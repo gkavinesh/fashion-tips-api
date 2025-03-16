@@ -83,6 +83,11 @@ app.get('/', (req, res) => {
     `);
 });
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "http://localhost:8081");
+  next();
+});
+
 // Your fashion tips API endpoint
 app.get('/fashion-tips', (req, res) => {
     const tips = [
