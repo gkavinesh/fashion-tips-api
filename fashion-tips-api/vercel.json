@@ -8,11 +8,12 @@
   ],
   "routes": [
     {
-      "src": "/fashion-tips",
-      "dest": "/server.js"
+      "src": "/(.*)",
+      "dest": "server.js"
     }
   ]
 }
+
 
 
   
