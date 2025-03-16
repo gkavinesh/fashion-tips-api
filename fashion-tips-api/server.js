@@ -86,10 +86,23 @@ app.get('/', (req, res) => {
 // Your fashion tips API endpoint
 app.get('/fashion-tips', (req, res) => {
     const tips = [
-        "Pair light colors with neutrals for a balanced look.",
-        "Accessories like belts, bags, and shoes can elevate your outfit.",
-        "Don't be afraid to experiment with layers and textures.",
-        "Fit is key—always choose clothing that flatters your body shape."
+      "Balance proportions: Loose tops go well with fitted bottoms and vice versa.",
+      "Accessorize to enhance your look, but don’t overdo it.",
+      "Tailored clothes complement your silhouette and enhance structure.",
+      "Mix textures like silk and denim to add visual interest.",
+      "A statement piece, like bold earrings or a patterned blazer, can define your outfit.",
+      "Comfort and confidence are key: Wear what makes you feel good.",
+      "Shoes can make or break an outfit; match them with the occasion.",
+      "Denim jackets are a classic and work across all seasons.",
+      "Minimalist outfits create a sophisticated, effortless look.",
+      "Match your belt with your shoes for a cohesive look.",
+      "Experiment with patterns but keep one dominant color for balance.",
+      "Classic sunglasses add a polished touch to any outfit.",
+      "Monochrome outfits are sleek, elongate the body, and look modern.",
+      "Scarves can instantly enhance your outfit, especially in colder months.",
+      "Mix high-end and budget-friendly fashion pieces for a balanced wardrobe.",
+      "Dressing according to your body shape enhances your best features.",
+      "For warm skin tones, wear earthy colors like gold, orange, and brown; for cool tones, go for blues, purples, and greys."
     ];
     res.json(tips);
 });
