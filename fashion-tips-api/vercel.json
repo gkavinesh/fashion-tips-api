@@ -1,11 +1,18 @@
 {
   "version": 2,
-  "functions": {
-    "api/**/*.js": {
-      "memory": 128,
-      "maxDuration": 10
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
     }
-  }
+  ],
+  "routes": [
+    {
+      "src": "/fashion-tips",
+      "dest": "/server.js"
+    }
+  ]
 }
+
 
   
